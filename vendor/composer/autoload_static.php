@@ -7,6 +7,11 @@ namespace Composer\Autoload;
 class ComposerStaticInit1d750299f4398c3ead955368283f7bec
 {
     public static $prefixLengthsPsr4 = array (
+        't' => 
+        array (
+            'tom-sapletta-com\\Phunc\\Tests\\' => 29,
+            'tom-sapletta-com\\Phunc\\' => 23,
+        ),
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
@@ -19,10 +24,6 @@ class ComposerStaticInit1d750299f4398c3ead955368283f7bec
         array (
             'Symfony\\Component\\Yaml\\' => 23,
         ),
-        'P' => 
-        array (
-            'Phunc\\' => 6,
-        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -31,6 +32,14 @@ class ComposerStaticInit1d750299f4398c3ead955368283f7bec
     );
 
     public static $prefixDirsPsr4 = array (
+        'tom-sapletta-com\\Phunc\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
+        ),
+        'tom-sapletta-com\\Phunc\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
@@ -44,10 +53,6 @@ class ComposerStaticInit1d750299f4398c3ead955368283f7bec
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
-        ),
-        'Phunc\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
