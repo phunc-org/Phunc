@@ -13,7 +13,7 @@ namespace Phunc;
 /**
  * Class executeCreatePath
  */
-class executeCreatePath implements ValueBoolean
+class ExecuteCreatePath implements ValueBoolean
 {
     private $value = '';
 

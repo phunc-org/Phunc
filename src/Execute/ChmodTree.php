@@ -12,7 +12,7 @@ namespace Phunc;
 /**
  * Class executeChmodTree
  */
-class executeChmodTree
+class ExecuteChmodTree
 {
 
     /**

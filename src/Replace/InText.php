@@ -12,7 +12,7 @@ namespace Phunc;
 /**
  * Class replacingInText
  */
-class replacingInText implements ValuePath, HasString
+class ReplaceInText implements ValuePath, HasString
 {
     private $value = '';
 
