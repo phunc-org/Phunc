@@ -1,0 +1,19 @@
+{
+    "name": "softreck/phunc",
+    "description": "Functional Environment for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tomasz Sapletta",
+            "email": "tom@sapletta.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Phunc\\": "src/"
+        }
+    }
+}
