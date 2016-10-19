@@ -10,6 +10,8 @@ require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Compos
 
 use Phunc\Dump;
 
-new Dump($_SERVER);
+#new Dump($_SERVER);
+#new \PHPUnit\Framework\TestCase();
 
+new DumpTest();
 #php tests/test.php
