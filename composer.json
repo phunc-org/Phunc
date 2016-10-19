@@ -3,6 +3,8 @@
     "description": "Functional Environment for PHP",
     "type": "library",
     "license": "MIT",
+    "keywords": ["functional programming","strong typing"],
+    "homepage": "http://phunc.de",
     "authors": [
         {
             "name": "Tomasz Sapletta",
