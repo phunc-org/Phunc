@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "tom-sapletta-com\\Phunc\\": "src/"
+      "Phunc\\": "src/"
     }
   },
   "require-dev": {
@@ -28,7 +28,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "tom-sapletta-com\\Phunc\\Tests\\": "tests/"
+      "Phunc\\Tests\\": "tests/"
     }
   }
 }
