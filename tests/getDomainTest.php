@@ -17,10 +17,34 @@ class getDomainTest extends TestCase
 {
     public function testTrueIsTrue()
     {
-        $server_param = [];
-        $server_param['SCRIPT_NAME'] = '';
-        $object = new getDomain($server_param);
-        $foo = true;
-        $this->assertTrue($foo);
+        $server_array = [];
+
+        $server_array['HTTP_HOST'] = null;
+        $server_array['SERVER_NAME'] = null;
+        $server_array['USERDOMAIN'] = null;
+        $object = (string)new getDomain($server_array);
+        $this->assertEquals('', $object);
+
+        $server_array['HTTP_HOST'] = null;
+        $server_array['SERVER_NAME'] = 'local';
+        $server_array['USERDOMAIN'] = null;
+        $object = (string)new getDomain($server_array);
+        $this->assertEquals('local', $object);
+
+
+        $server_array['HTTP_HOST'] = 'local';
+        $server_array['SERVER_NAME'] = null;
+        $server_array['USERDOMAIN'] = "GIGABYTE";
+        $object = (string)new getDomain($server_array);
+
+        $this->assertEquals('local', $object);
+
+
+        $server_array['HTTP_HOST'] = null;
+        $server_array['SERVER_NAME'] = null;
+        $server_array['USERDOMAIN'] = "GIGABYTE";
+        $object = (string)new getDomain($server_array);
+        $this->assertEquals('gigabyte', $object);
+
     }
 }

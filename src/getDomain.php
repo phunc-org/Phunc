@@ -18,14 +18,16 @@ class getDomain implements HasString, ValueText
 
     public function __construct($server_param)
     {
-        $path_list = explode('/', $server_param['SCRIPT_NAME']);
-//        $path_list_count = count($path_list);
-        if (!empty($path_list[0])) {
-            $this->value = $path_list[0];
-        } else if (!empty($path_list[1])) {
-            $this->value = $path_list[1];
+        $this->value = '';
+        if (!empty($server_param['HTTP_HOST'])) {
+            $this->value = $server_param['HTTP_HOST'];
+        } else if (!empty($server_param['SERVER_NAME'])) {
+            $this->value = $server_param['SERVER_NAME'];
+        } else if (!empty($server_param['USERDOMAIN'])) {
+            $this->value = strtolower($server_param['USERDOMAIN']);
         }
     }
+
 
     /**
      * @return mixed|string

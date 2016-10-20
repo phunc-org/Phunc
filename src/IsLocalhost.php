@@ -21,6 +21,8 @@ class IsLocalhost implements ValueBoolean
      */
     public function __construct($server_array)
     {
+        $server_name = '';
+
         if (!empty($server_array['HTTP_HOST'])) {
             $server_name = (string)new getUrl();
 
@@ -33,7 +35,7 @@ class IsLocalhost implements ValueBoolean
                 $server_name = $path_list[1];
             }
 
-        } else {
+        } else if (!empty($server_array['SERVER_NAME'])) {
             $server_name = $server_array['SERVER_NAME'];
         }
 
