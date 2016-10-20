@@ -17,7 +17,7 @@ use phpDocumentor\Reflection\Types\Boolean;
  */
 class getUrl implements HasString, ValueText
 {
-    private $value = null;
+    private $value = '';
 
     /**
      * getUrl constructor.
