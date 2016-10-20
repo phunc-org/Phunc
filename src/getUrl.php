@@ -8,6 +8,7 @@
  */
 
 namespace Phunc;
+
 use phpDocumentor\Reflection\Types\Boolean;
 
 /**
@@ -25,12 +26,14 @@ class getUrl implements HasString, ValueText
     public function __construct($server_param)
     {
         $path = '';
-
-        if(!empty($server_param['HTTP_HOST'])){
+        if (!empty($server_param)) {
+            return;
+        }
+        if (!empty($server_param['HTTP_HOST'])) {
 
         }
 
-        if(!empty($server_param['SCRIPT_NAME'])){
+        if (!empty($server_param['SCRIPT_NAME'])) {
             $this->value = 'http://';
             $this->value .= (string)new getDomain($server_param);
             $this->value .= '/';
@@ -42,27 +45,27 @@ class getUrl implements HasString, ValueText
                 $this->value .= $path_list[1];
             }
         }
-/*
-        if(!empty($server_param['SERVER_NAME'])) {
+        /*
+                if(!empty($server_param['SERVER_NAME'])) {
 
-//        $url = (string)new getUrl($_SERVER);
-            $path = (string)new getDomain($server_param);
+        //        $url = (string)new getUrl($_SERVER);
+                    $path = (string)new getDomain($server_param);
 
-//            $this->value = $localhost_name . '/' . $project_domain;
-//        $path = $url . '/' . $path;
-            $is_localhost = (Boolean) new IsLocalhost($server_param);
+        //            $this->value = $localhost_name . '/' . $project_domain;
+        //        $path = $url . '/' . $path;
+                    $is_localhost = (Boolean) new IsLocalhost($server_param);
 
-            // cut last part: /cv.php
-            if (!$is_localhost) {
-                $pathi = pathinfo($path);
-                $path = $pathi['dirname'];
-            }
+                    // cut last part: /cv.php
+                    if (!$is_localhost) {
+                        $pathi = pathinfo($path);
+                        $path = $pathi['dirname'];
+                    }
 
-        }
-        if(!empty($server_param['USERDOMAIN'])) {
-            $path = strtolower($server_param['USERDOMAIN']);
-        }
-*/
+                }
+                if(!empty($server_param['USERDOMAIN'])) {
+                    $path = strtolower($server_param['USERDOMAIN']);
+                }
+        */
 
 
     }
