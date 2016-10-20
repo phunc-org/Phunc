@@ -25,7 +25,7 @@ class ExecuteChmodTree
     {
         for ($x = 0; $x < $limit; $x++) {
             @chmod($path, $filemode);
-            $path = substr($path, 0, strrpos($path, '/', -2) + 1);
+            $path = substr($path, 0, strrpos($path, DIRECTORY_SEPARATOR, -2) + 1);
         }
     }
 }

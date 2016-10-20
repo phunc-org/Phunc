@@ -18,15 +18,17 @@ class getPathToDownloadedFile implements HasString, ValueText
 
     public function __construct($filename, $cache_dir, $url_data)
     {
-        $pathdir = $cache_dir . $url_data;
-
+        $pathdir = $cache_dir;
         // when not exist path, creati path to source
-        $executing = new executeCreatePath($pathdir);
+        $executing = new ExecuteCreatePath($pathdir);
         if ($executing->value()) {
             $pathfile = $pathdir . $filename;
 
             if (!is_readable($url_data . $filename)) {
+
                 $url = 'http://' . $url_data . $filename;
+                $url = str_replace('\\' , '/', $url);
+
                 new HasRemoteServerFile($url);
 //                if (!$this->isFileRemote($url)) {
 //                    return false;
@@ -43,7 +45,7 @@ class getPathToDownloadedFile implements HasString, ValueText
             }
 
             // Everything for owner, read and execute for others
-            new executeChmodTree($pathfile);
+            new ExecuteChmodTree($pathfile);
 
             $this->value = $pathfile;
         }
