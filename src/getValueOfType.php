@@ -36,7 +36,7 @@ class getValueOfType implements ValuePath, ValueHtml
         $type_val = $type;
         $type_arr = [];
         try {
-            $value = new replacingInText($value);
+            $value = new ReplaceInText($value);
             $arr = new TextToArray($type);
             $type_arr = $arr->value();
 

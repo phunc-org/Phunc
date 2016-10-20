@@ -10,7 +10,7 @@
 namespace Phunc;
 
 /**
- * Class replacingInText
+ * Class ReplaceInText
  */
 class ReplaceInText implements ValuePath, HasString
 {
