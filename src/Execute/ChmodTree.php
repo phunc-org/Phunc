@@ -1,15 +1,14 @@
 <?php
 
 /**
- * Created by PhpStorm.
- * User: tom
- * Date: 14.10.2016
- * Time: 19:56
+ * Created by tom-sapletta-com, 14.10.2016, 19:56
  */
 
 namespace Phunc;
 
 /**
+ * Execute chmod in console
+ *
  * Class executeChmodTree
  */
 class ExecuteChmodTree

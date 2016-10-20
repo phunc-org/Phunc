@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ *
  * User: neptun
  * Date: 12.12.13
  * Time: 19:55

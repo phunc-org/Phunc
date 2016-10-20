@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Created by PhpStorm.
- * User: tom
+ *
+ * Created by tom-sapletta-com
  * Date: 16.10.2016
  * Time: 11:01
  */
