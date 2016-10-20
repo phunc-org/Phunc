@@ -24,7 +24,7 @@ class IsLocalhost implements ValueBoolean
         $server_name = '';
 
         if (!empty($server_array['HTTP_HOST'])) {
-            $server_name = (string)new getUrl();
+            $server_name = (string)new getUrl($server_array);
 
             // Split existing port
             $path_list = explode(':', $server_name);
