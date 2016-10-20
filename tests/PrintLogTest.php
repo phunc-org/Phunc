@@ -7,12 +7,19 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\PrintLog;
 
-
-class PrintLogTestTest extends TestCase
+/**
+ * Test Class PrintLogTest
+ * Base Class PrintLog
+ */
+class PrintLogTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+
+        $object = new PrintLog($param);
         $foo = true;
         $this->assertTrue($foo);
     }

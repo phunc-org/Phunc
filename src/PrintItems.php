@@ -18,12 +18,9 @@ abstract class PrintItems implements HasTemplate, HasString
     public $template = '';
     public $items = '';
 
-//    public function __construct(Items $items, TemplateItems $template)
     public function __construct($items, $template = '')
     {
         $this->items = $items;
-//        $this->items = ['' => ''];
-//        $this->template = '';
     }
 
     public function items()

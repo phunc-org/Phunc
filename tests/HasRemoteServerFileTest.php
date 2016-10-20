@@ -7,12 +7,18 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\HasRemoteServerFile;
 
-
-class HasRemoteServerFileTestTest extends TestCase
+/**
+ * Test Class HasRemoteServerFileTest
+ * Base Class HasRemoteServerFile
+ */
+class HasRemoteServerFileTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+        $object = new HasRemoteServerFile($param);
         $foo = true;
         $this->assertTrue($foo);
     }

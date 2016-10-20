@@ -9,7 +9,9 @@
 
 namespace Phunc;
 
+use Phunc\ExecuteCreatePath;
 
+//include('Execute\CreatePath.php');
 /**
  * Class addLineInFile
  *
@@ -31,7 +33,7 @@ class addLineInFile
         if (!$is_writable) {
             $path = pathinfo($file);
             $dir = $path['dirname'];
-            $executing = new executeCreatePath($dir);
+            $executing = new ExecuteCreatePath($dir);
 //            $executing = new executeChmodTree($file);
         }
 

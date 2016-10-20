@@ -7,12 +7,18 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\getPathToDownloadedFile;
 
-
-class getPathToDownloadedFileTestTest extends TestCase
+/**
+ * Test Class getPathToDownloadedFileTest
+ * Base Class getPathToDownloadedFile
+ */
+class getPathToDownloadedFileTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+        $object = new getPathToDownloadedFile($param);
         $foo = true;
         $this->assertTrue($foo);
     }

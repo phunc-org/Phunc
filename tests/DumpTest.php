@@ -1,21 +1,24 @@
+
 <?php
 
 /**
- *
- * Created by tom-sapletta-com
- * Date: 19.10.2016
- * Time: 17:33
+ * Project: Phunc,
+ * File created by: tom-sapletta-com, on 20.10.2016, 10:28
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\Dump;
 
 /**
- * Class DumpTest
+ * Test Class DumpTest
+ * Base Class Dump
  */
 class DumpTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = [];
+        $object = new Dump($param);
         $foo = true;
         $this->assertTrue($foo);
     }

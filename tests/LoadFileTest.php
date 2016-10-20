@@ -7,12 +7,18 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\LoadFile;
 
-
-class LoadFileTestTest extends TestCase
+/**
+ * Test Class LoadFileTest
+ * Base Class LoadFile
+ */
+class LoadFileTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+        $object = new LoadFile($param);
         $foo = true;
         $this->assertTrue($foo);
     }

@@ -7,12 +7,19 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\ValidString;
 
-
-class ValidStringTestTest extends TestCase
+/**
+ * Test Class ValidStringTest
+ * Base Class ValidString
+ */
+class ValidStringTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+
+        $object = new ValidString($param);
         $foo = true;
         $this->assertTrue($foo);
     }

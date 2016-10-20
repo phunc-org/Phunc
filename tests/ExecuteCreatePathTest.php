@@ -7,12 +7,18 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\ExecuteCreatePath;
 
-
-class ExecuteCreatePathTestTest extends TestCase
+/**
+ * Test Class ExecuteCreatePathTest
+ * Base Class ExecuteCreatePath
+ */
+class ExecuteCreatePathTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+        $object = new ExecuteCreatePath();
         $foo = true;
         $this->assertTrue($foo);
     }

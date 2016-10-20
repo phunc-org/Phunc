@@ -7,12 +7,18 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\IsLocalhost;
 
-
-class IsLocalhostTestTest extends TestCase
+/**
+ * Test Class IsLocalhostTest
+ * Base Class IsLocalhost
+ */
+class IsLocalhostTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+        $object = new IsLocalhost($param);
         $foo = true;
         $this->assertTrue($foo);
     }

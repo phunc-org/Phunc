@@ -7,12 +7,19 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\ReplaceInText;
 
-
-class ReplaceInTextTestTest extends TestCase
+/**
+ * Test Class ReplaceInTextTest
+ * Base Class ReplaceInText
+ */
+class ReplaceInTextTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+
+        $object = new ReplaceInText($param);
         $foo = true;
         $this->assertTrue($foo);
     }

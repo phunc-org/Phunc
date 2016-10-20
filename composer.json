@@ -20,7 +20,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Phunc\\": "src/"
+      "Phunc\\": "src/",
+      "Config\\": "config/"
     }
   },
   "require-dev": {

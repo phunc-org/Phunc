@@ -8,7 +8,10 @@
  */
 
 namespace Phunc;
+
 use Exception;
+use Config\ErrorPath;
+use Phunc\addLineInFile;
 
 /**
  * Class addDebugError
@@ -22,13 +25,14 @@ class addDebugError
      */
     public function __construct($txt, $txt2 = '')
     {
-        if($txt2 instanceof Exception){
+        if ($txt2 instanceof Exception) {
             $txt2 = $txt2->getMessage();
         }
         $logtxt = time() . ', '
-            . $txt .  ', '
+            . $txt . ', '
             . $txt2;
 
-        new addLineInFile(LOG_ERROR_PATH, $logtxt);
+//        new addLineInFile(LOG_ERROR_PATH, $logtxt);
+        new addLineInFile((string)new ErrorPath(), $logtxt);
     }
 }

@@ -7,12 +7,18 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\getDomain;
 
-
-class getDomainTestTest extends TestCase
+/**
+ * Test Class getDomainTest
+ * Base Class getDomain
+ */
+class getDomainTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+        $object = new getDomain($param);
         $foo = true;
         $this->assertTrue($foo);
     }

@@ -7,12 +7,18 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\Menu;
 
-
-class MenuTestTest extends TestCase
+/**
+ * Test Class MenuTest
+ * Base Class Menu
+ */
+class MenuTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+        $object = new Menu($param);
         $foo = true;
         $this->assertTrue($foo);
     }

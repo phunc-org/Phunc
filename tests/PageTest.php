@@ -7,12 +7,18 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\Page;
 
-
-class PageTestTest extends TestCase
+/**
+ * Test Class PageTest
+ * Base Class Page
+ */
+class PageTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+        $object = new Page($param);
         $foo = true;
         $this->assertTrue($foo);
     }

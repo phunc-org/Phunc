@@ -8,10 +8,10 @@
  */
 
 namespace Phunc;
-
+//use Phunc\ValueBoolean;
 
 /**
- * Class executeCreatePath
+ * Class ExecuteCreatePath
  */
 class ExecuteCreatePath implements ValueBoolean
 {

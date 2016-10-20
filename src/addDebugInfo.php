@@ -8,7 +8,9 @@
  */
 
 namespace Phunc;
+
 use Exception;
+use Config\InfoPath;
 
 /**
  * Class addDebugInfo
@@ -28,6 +30,6 @@ class addDebugInfo
         $logtxt = time() . ', '
             . $txt . ', '
             . $txt2;
-        new addLineInFile(LOG_INFO_PATH, $logtxt);
+        new addLineInFile((string)new InfoPath(), $logtxt);
     }
 }

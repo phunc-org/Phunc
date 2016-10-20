@@ -7,12 +7,18 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\getServerInfo;
 
-
-class getServerInfoTestTest extends TestCase
+/**
+ * Test Class getServerInfoTest
+ * Base Class getServerInfo
+ */
+class getServerInfoTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+        $object = new getServerInfo($param);
         $foo = true;
         $this->assertTrue($foo);
     }

@@ -7,12 +7,18 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\getUrl;
 
-
-class getUrlTestTest extends TestCase
+/**
+ * Test Class getUrlTest
+ * Base Class getUrl
+ */
+class getUrlTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+        $object = new getUrl($param);
         $foo = true;
         $this->assertTrue($foo);
     }

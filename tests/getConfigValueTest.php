@@ -7,12 +7,18 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\getConfigValue;
 
-
-class getConfigValueTestTest extends TestCase
+/**
+ * Test Class getConfigValueTest
+ * Base Class getConfigValue
+ */
+class getConfigValueTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+        $object = new getConfigValue($param);
         $foo = true;
         $this->assertTrue($foo);
     }

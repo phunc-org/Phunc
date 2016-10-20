@@ -19,16 +19,14 @@ class ReplaceInText implements ValuePath, HasString
     public function __construct($value)
     {
         $value_out = null;
-//        try {
-            $valid = new ValidString($value);
-            $value_out = str_replace([", \n", ",\n", "; \n", ";\n"], '<br/>', $value);
-//        } catch (Exception $e) {
-//            $this->addLog(__CLASS__, $e);
-//
-//        }
+        $valid = new ValidString($value);
+        $value_out = str_replace([", \n", ",\n", "; \n", ";\n"], '<br/>', $value);
         $this->value = $value_out;
     }
 
+    /**
+     * @return string
+     */
     public function value()
     {
         return $this->value;

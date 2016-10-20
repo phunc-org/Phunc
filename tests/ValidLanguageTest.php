@@ -7,12 +7,19 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\ValidLanguage;
 
-
-class ValidLanguageTestTest extends TestCase
+/**
+ * Test Class ValidLanguageTest
+ * Base Class ValidLanguage
+ */
+class ValidLanguageTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+
+        $object = new ValidLanguage($param);
         $foo = true;
         $this->assertTrue($foo);
     }

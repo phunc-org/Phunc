@@ -1,16 +1,25 @@
+
 <?php
+
 /**
  * Project: Phunc,
- * File created by: tom-sapletta-com, on 20.10.2016, 10:30
+ * File created by: tom-sapletta-com, on 20.10.2016, 10:28
  */
 
-namespace Phunc;
+use PHPUnit\Framework\TestCase;
+use Phunc\valString;
 
-
-class valStringTest extends \PHPUnit_Framework_TestCase
+/**
+ * Test Class valStringTest
+ * Base Class valString
+ */
+class valStringTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+
+        $object = new valString($param);
         $foo = true;
         $this->assertTrue($foo);
     }

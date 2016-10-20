@@ -7,12 +7,19 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\SplitArray;
 
-
-class SplitArrayTestTest extends TestCase
+/**
+ * Test Class SplitArrayTest
+ * Base Class SplitArray
+ */
+class SplitArrayTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+
+        $object = new SplitArray($param);
         $foo = true;
         $this->assertTrue($foo);
     }

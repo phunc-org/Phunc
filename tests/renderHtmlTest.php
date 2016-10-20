@@ -7,12 +7,19 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\renderHtml;
 
-
-class renderHtmlTestTest extends TestCase
+/**
+ * Test Class renderHtmlTest
+ * Base Class renderHtml
+ */
+class renderHtmlTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+
+        $object = new renderHtml($param);
         $foo = true;
         $this->assertTrue($foo);
     }

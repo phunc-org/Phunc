@@ -7,12 +7,18 @@
  */
 
 use PHPUnit\Framework\TestCase;
+use Phunc\getHomePath;
 
-
-class getHomePathTestTest extends TestCase
+/**
+ * Test Class getHomePathTest
+ * Base Class getHomePath
+ */
+class getHomePathTest extends TestCase
 {
     public function testTrueIsTrue()
     {
+        $param = '';
+        $object = new getHomePath($param);
         $foo = true;
         $this->assertTrue($foo);
     }
