@@ -8,7 +8,6 @@
  */
 
 namespace Phunc;
-
 use phpDocumentor\Reflection\Types\Boolean;
 
 /**
@@ -26,14 +25,12 @@ class getUrl implements HasString, ValueText
     public function __construct($server_param)
     {
         $path = '';
-        if (!empty($server_param)) {
-            return;
-        }
-        if (!empty($server_param['HTTP_HOST'])) {
+
+        if(!empty($server_param['HTTP_HOST'])){
 
         }
 
-        if (!empty($server_param['SCRIPT_NAME'])) {
+        if(!empty($server_param['SCRIPT_NAME'])){
             $this->value = 'http://';
             $this->value .= (string)new getDomain($server_param);
             $this->value .= '/';
