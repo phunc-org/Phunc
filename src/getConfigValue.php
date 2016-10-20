@@ -6,8 +6,8 @@
  * Date: 14.10.2016
  * Time: 18:50
  */
-//use Phunc;
 namespace Phunc;
+use Exception;
 
 /**
  * Class getConfigValue

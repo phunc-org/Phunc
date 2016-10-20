@@ -8,7 +8,6 @@
  */
 
 namespace Phunc;
-//use Phunc\ValueBoolean;
 
 /**
  * Class ExecuteCreatePath

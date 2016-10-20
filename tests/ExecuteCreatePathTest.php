@@ -17,8 +17,8 @@ class ExecuteCreatePathTest extends TestCase
 {
     public function testTrueIsTrue()
     {
-        $param = '';
-        $object = new ExecuteCreatePath();
+        $param = '/';
+        $object = new ExecuteCreatePath($param);
         $foo = true;
         $this->assertTrue($foo);
     }

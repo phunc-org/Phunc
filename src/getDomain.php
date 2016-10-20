@@ -16,17 +16,15 @@ class getDomain implements HasString, ValueText
 {
     private $value = null;
 
-    public function __construct()
+    public function __construct($server_param)
     {
-        $path_list = explode('/', $_SERVER['SCRIPT_NAME']);
+        $path_list = explode('/', $server_param['SCRIPT_NAME']);
 //        $path_list_count = count($path_list);
         if (!empty($path_list[0])) {
-            $path = $path_list[0];
+            $this->value = $path_list[0];
         } else if (!empty($path_list[1])) {
-            $path = $path_list[1];
+            $this->value = $path_list[1];
         }
-
-        $this->value = $path;
     }
 
     /**

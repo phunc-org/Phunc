@@ -11,7 +11,6 @@ namespace Phunc;
 
 use Exception;
 use Config\ErrorPath;
-use Phunc\addLineInFile;
 
 /**
  * Class addDebugError

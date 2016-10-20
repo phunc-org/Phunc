@@ -17,8 +17,11 @@ class getHomePathTest extends TestCase
 {
     public function testTrueIsTrue()
     {
-        $param = '';
-        $object = new getHomePath($param);
+        $default_lang = 'en';
+        $server_param = [];
+        $server_param['SCRIPT_NAME'] = '';
+        $server_param['HTTP_HOST'] = '';
+        $object = new getHomePath($server_param, $default_lang);
         $foo = true;
         $this->assertTrue($foo);
     }

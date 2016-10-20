@@ -7,6 +7,7 @@
  * Time: 07:23
  */
 namespace Phunc;
+use phpDocumentor\Reflection\Types\Boolean;
 
 /**
  * Class getHomePath
@@ -18,23 +19,20 @@ class getHomePath implements HasString, ValueText
 
     /**
      * get current language
-     * @param $default_lang
+     *
+     * @param $server_param
+     * @param string $default_lang
      */
-    public function __construct($default_lang = 'en')
+    public function __construct($server_param, $default_lang = 'en')
     {
+        $url = (string)new getUrl($server_param);
+        $path_dir = (string)new getDomain($server_param);
+        $path = $url . '/' . $path_dir;
 
-//        $localhost_name = (string) new getConfigValue('localhost_name');
-//        $project_domain = (string) new getConfigValue('project_domain');
-//        $path = (string) new getConfigValue('project_domain');
-        $url = (string)new getUrl();
-        $path = (string)new getDomain();
+        $is_localhost = (Boolean) new IsLocalhost($server_param);
 
-//            $this->value = $localhost_name . '/' . $project_domain;
-        $path = $url . '/' . $path;
-
-        $is_localhost = new IsLocalhost($_SERVER);
         // cut last part: /cv.php
-        if(!$is_localhost->value()){
+        if(!$is_localhost){
             $pathi = pathinfo($path);
             $path = $pathi['dirname'];
         }
@@ -55,6 +53,6 @@ class getHomePath implements HasString, ValueText
      */
     public function __toString()
     {
-        return $this->value();
+        return (string) $this->value();
     }
 }

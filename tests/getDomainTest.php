@@ -17,8 +17,9 @@ class getDomainTest extends TestCase
 {
     public function testTrueIsTrue()
     {
-        $param = '';
-        $object = new getDomain($param);
+        $server_param = [];
+        $server_param['SCRIPT_NAME'] = '';
+        $object = new getDomain($server_param);
         $foo = true;
         $this->assertTrue($foo);
     }

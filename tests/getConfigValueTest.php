@@ -17,8 +17,9 @@ class getConfigValueTest extends TestCase
 {
     public function testTrueIsTrue()
     {
-        $param = '';
-        $object = new getConfigValue($param);
+        $path = '';
+        $name = '';
+        $object = new getConfigValue($path, $name);
         $foo = true;
         $this->assertTrue($foo);
     }
