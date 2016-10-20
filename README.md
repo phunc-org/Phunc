@@ -1,13 +1,7 @@
 Phunc
 =====
 
-Simple functional introduction in PHP
-
-Functional Programming in PHP  PHunc
-
-
-Simple functional utilities for php
-
+Simple functional introduction in PHP, give You utilities for functional programming.
 
 ![alt tag](http://phunc.de/logo_phunc.png)
 
@@ -15,7 +9,6 @@ Simple functional utilities for php
 http://phunc.de/
 
 http://phunc.pl/
-
 
 
 ## Install Phunc
@@ -83,4 +76,4 @@ class ErrorPath
 
 ## Todo List
 
-[include](TODO.md)
+see Todo List [here](TODO.md)
