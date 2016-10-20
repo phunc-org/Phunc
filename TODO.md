@@ -1,0 +1,1 @@
+Make compatibility with docker

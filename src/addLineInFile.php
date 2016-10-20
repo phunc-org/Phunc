@@ -32,7 +32,7 @@ class addLineInFile
             $dir = $path['dirname'];
             $executing = new ExecuteCreatePath($dir);
             if ($use_chmod) {
-                $executing = new executeChmodTree($file);
+                $executing = new ExecuteChmodTree($file);
             }
         }
 

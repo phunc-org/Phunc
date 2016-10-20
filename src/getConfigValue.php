@@ -39,6 +39,8 @@ class getConfigValue implements ValueText, HasString
         $config = spyc_load_file($config_path);
 
 
+
+
         if (empty($config)) {
 //            throw new Exception(__CLASS__ . ' Empty $config');
             return;
