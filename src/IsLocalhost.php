@@ -12,7 +12,7 @@ namespace Phunc;
 /**
  * Class IsLocalhost
  */
-class IsLocalhost implements ValueBoolean
+class IsLocalhost implements ValueText
 {
     /**
      * IsLocalhost constructor.
@@ -21,7 +21,12 @@ class IsLocalhost implements ValueBoolean
      */
     public function __construct($server_array)
     {
-        $server_name = '';
+
+        $server_name = $server_array['HTTP_HOST'];// || $server_array['SERVER_NAME'];
+        if ($server_name === 'gigabyte' OR $server_name === 'localhost' OR $server_name === 'neptun') {
+            $this->value = true;
+            return;
+        }
 
         if (!empty($server_array['HTTP_HOST'])) {
             $server_name = (string)new getUrl($server_array);
@@ -31,7 +36,8 @@ class IsLocalhost implements ValueBoolean
 
             if (!empty($path_list[0])) {
                 $server_name = $path_list[0];
-            } else if (!empty($path_list[1])) {
+            }
+            if (!empty($path_list[1])) {
                 $server_name = $path_list[1];
             }
 
@@ -39,16 +45,16 @@ class IsLocalhost implements ValueBoolean
             $server_name = $server_array['SERVER_NAME'];
         }
 
-        $this->value = ($server_name == 'gigabyte' OR $server_name == 'localhost' OR $server_name == 'neptun');
+        $this->value = ($server_name === 'gigabyte' OR $server_name === 'localhost' OR $server_name === 'neptun');
     }
 
     /**
-     * @var bool
+     * @var string
      */
-    public $value = false;
+    public $value = '';
 
     /**
-     * @return bool
+     * @return string
      */
     public function value()
     {
