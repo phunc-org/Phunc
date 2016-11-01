@@ -25,7 +25,9 @@
     }
   },
   "require-dev": {
-    "phpunit/phpunit": "5.5.*"
+    "phpunit/phpunit": "5.5.*",
+    "tom-sapletta-com/unittest-generator": "*",
+    "codeception/codeception": "*"
   },
   "autoload-dev": {
     "psr-4": {
