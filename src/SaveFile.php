@@ -12,7 +12,21 @@ namespace Phunc;
  * Class SaveFile
  * @package phunc
  */
-class SaveFile
+class SaveFile implements ValueText
 {
 
+    public $value = '';
+
+    public function __construct($path, $content)
+    {
+        $this->value = file_put_contents($path, $content);
+    }
+
+    /**
+     * @return string
+     */
+    public function value()
+    {
+        return $this->value;
+    }
 }
