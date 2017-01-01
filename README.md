@@ -3,19 +3,86 @@ Phunc
 
 Simple functional introduction in PHP, give You utilities for functional programming.
 
-## Example
+## Example functional programming with strong typing
+
+### Example PHP CLASS
 ```
 class Dump
 {    
-    public function __construct(ArrayAccess $)
+    public function __construct(ArrayObject $array)
     {
-        echo '<pre>';
-        var_dump($data);
-        echo '</pre>';
-        die;
+        // first variable
+        try {
+                if(empty($array->first)){
+                    throw new Exception('Undefined property: first'); 
+                }
+                var_dump($array->first);
+                
+                
+        } catch( Exception $e ) {
+           echo 'Problem with ' . $e->getMessage() . "\n";
+        }
+         
+        // second variable
+        try {
+            if(empty($array->second))
+            {
+                throw new Exception('Undefined property: second'); 
+            }
+            var_dump($array->second);
+            
+        } catch( Exception $e ) {
+           echo 'Problem with ' . $e->getMessage() . "\n";
+        }
     }
 }
 ```
+
+### 1. Example without parameters
+
+#### Code
+```
+$a = new ArrayObject();
+new Dump( $a );
+```
+
+#### Result
+```
+Problem with Undefined property: first
+Problem with Undefined property: second
+```
+
+### 2. Example with first parameter
+
+#### Code
+```
+$a = new ArrayObject();
+$a->first = 1;
+new Dump( $a );
+```
+
+#### Result
+```
+int(1)
+Problem with Undefined property: second
+```
+
+### 3. Example with both parameters
+
+#### Code
+```
+$a = new ArrayObject();
+$a->first = 1;
+$a->second = 2;
+new Dump( $a );
+```
+
+#### Result
+```
+int(1)
+int(2)
+```
+
 
 ![alt tag](http://phunc.de/logo_phunc.png)
 
