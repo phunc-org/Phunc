@@ -1,5 +1,7 @@
-Phunc
+Phunc, functional programming in PHP with strong typing
 =====
+
+make PHP great again ;)
 
 Simple functional introduction in PHP, give You utilities for functional programming.
 
