@@ -3,6 +3,20 @@ Phunc
 
 Simple functional introduction in PHP, give You utilities for functional programming.
 
+## Example
+```
+class Dump
+{    
+    public function __construct(ArrayAccess $)
+    {
+        echo '<pre>';
+        var_dump($data);
+        echo '</pre>';
+        die;
+    }
+}
+```
+
 ![alt tag](http://phunc.de/logo_phunc.png)
 
 
