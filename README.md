@@ -3,7 +3,21 @@ Phunc, functional programming in PHP with strong typing
 
 make PHP great again ;)
 
-Simple functional introduction in PHP, give You utilities for functional programming.
+## introduction
+
+With Phunc library I share ideas practice software examples.
+"how to use simple functional PHP with usage objecting representation"
+utilities for functional programming.
+
+## Phunctional thinking
+
+If you are not happy with functions in PHP to implements functional programming, try to use objects.
+PHP objects can help with: 
+
++ transporting 
++ converting
++ defining
++ controlling
 
 ## Example functional programming with strong typing
 
