@@ -14,9 +14,9 @@ utilities for functional programming.
 If you are not happy with functions in PHP to implements functional programming, try to use objects.
 PHP objects can help with: 
 
-+ transporting 
-+ converting
-+ defining
++ define
++ transport
++ conversion
 + controlling
 
 ## Example functional programming with strong typing
