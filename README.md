@@ -1,7 +1,104 @@
-Phunc
+Phunc, functional programming in PHP with strong typing
 =====
 
-Simple functional introduction in PHP, give You utilities for functional programming.
+make PHP great again ;)
+
+## introduction
+
+With Phunc library I share ideas practice software examples.
+"how to use simple functional PHP with usage objecting representation"
+utilities for functional programming.
+
+## Phunctional thinking
+
+If you are not happy with functions in PHP to implements functional programming, try to use objects.
+PHP objects can help with: 
+
++ define
++ transport
++ conversion
++ controlling
+
+## Example functional programming with strong typing
+
+### Example PHP CLASS
+```
+class Dump
+{    
+    public function __construct(ArrayObject $array)
+    {
+        // first variable
+        try {
+                if(empty($array->first)){
+                    throw new Exception('Undefined property: first'); 
+                }
+                var_dump($array->first);
+                
+                
+        } catch( Exception $e ) {
+           echo 'Problem with ' . $e->getMessage() . "\n";
+        }
+         
+        // second variable
+        try {
+            if(empty($array->second))
+            {
+                throw new Exception('Undefined property: second'); 
+            }
+            var_dump($array->second);
+            
+        } catch( Exception $e ) {
+           echo 'Problem with ' . $e->getMessage() . "\n";
+        }
+    }
+}
+```
+
+### 1. Example without parameters
+
+#### Code
+```
+$a = new ArrayObject();
+new Dump( $a );
+```
+
+#### Result
+```
+Problem with Undefined property: first
+Problem with Undefined property: second
+```
+
+### 2. Example with first parameter
+
+#### Code
+```
+$a = new ArrayObject();
+$a->first = 1;
+new Dump( $a );
+```
+
+#### Result
+```
+int(1)
+Problem with Undefined property: second
+```
+
+### 3. Example with both parameters
+
+#### Code
+```
+$a = new ArrayObject();
+$a->first = 1;
+$a->second = 2;
+new Dump( $a );
+```
+
+#### Result
+```
+int(1)
+int(2)
+```
+
 
 ![alt tag](http://phunc.de/logo_phunc.png)
 
