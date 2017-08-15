@@ -1,0 +1,19 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: tom
+ * Date: 2017-08-15
+ * Time: 14:29
+ */
+
+namespace Phunc\Rest;
+
+use Phunc\Rest\PostInterface;
+
+class Post implements PostInterface
+{
+    public function post(){
+
+    }
+
+}
