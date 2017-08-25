@@ -3,6 +3,8 @@ Phunc, functional programming in PHP with strong typing
 
 make PHP great again ;)
 
+[Apache2 requests](doc/Apache2.md)
+
 ## introduction
 
 With Phunc library I share ideas practice software examples.
