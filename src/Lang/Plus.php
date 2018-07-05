@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tomaszsapletta
- * Date: 28.06.2018
- * Time: 15:31
- */
 
 namespace Phunc\Calc;
 

@@ -1,24 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tomaszsapletta
- * Date: 28.06.2018
- * Time: 15:32
- */
 
 namespace Phunc\Calc;
 
 
 class Times extends \Phunc\Operation implements \Phunc\OperationInterface, Number, Text
 {
-//    public function calc()
-//    {
-//        $p = $this->param();
-//        $this->setResult($p[0] * $p[1]);
-//
-//        $p = $this->text();
-//        $this->setText($p[0] . '*' . $p[1]);
-//    }
 
     public function calc()
     {
