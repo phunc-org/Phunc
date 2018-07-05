@@ -128,7 +128,7 @@ class Year
      */
     public static function FirstDayInYearCarbon(int $year)
     {
-        return \Carbon\Carbon::parse( Phunc\Year::FirstDayInYear($year) );
+        return \Carbon\Carbon::parse( \Phunc\Year::FirstDayInYear($year) );
     }
 
     /**
@@ -147,7 +147,7 @@ class Year
      */
     public static function LastDayInYearCarbon(int $year)
     {
-        return \Carbon\Carbon::parse( Phunc\Year::LastDayInYear($year) );
+        return \Carbon\Carbon::parse( \Phunc\Year::LastDayInYear($year) );
     }
 
     /**
