@@ -23,5 +23,42 @@ Which can be helpful for very complicated operation, to explain step by step
     
     
 ## TODO, create SVG representation    
+
+## PL
+
+kalkulator ma na celu latwe analizowanie przeliczanych wartosci
+oraz debugging operacji w taki sposob, aby mozliwe bylo rzejrzyste kokreslenie
+jaka operacja co zmienila.
+krok po kroku jaki byl wynik
+
+
+hierarchiczne
+
++ Nazwa klasy oznacza nazwe operacji
++ Argumenty sa kolejnymi liczbami podlegajacej takiej samej operacji
+
+Przyklad ponizej przedstawiono kilka operacji:    
+* (1+2+3+4) / (2-1) / (2*1) = 5
+  
+
+
+
+    $operation = new Obelus(
+                new Plus(
+                    1,
+                    2,
+                    3,
+                    4
+                )
+                ,
+                new Minus(
+                    2,
+                    1
+                ),
+                new Times(
+                    2,
+                    1
+                )
+            );
     
     
