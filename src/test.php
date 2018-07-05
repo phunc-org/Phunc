@@ -13,7 +13,8 @@ use Phunc\Protocol\Http;
 use Phunc\Url;
 use Phunc\Port;
 
-$dataTest = ['test'];
+$dataTest = [];
+$dataTest[] = ['test'];
 //new Dump($dataTest);
 
 //$http = new \Phunc\Protocol\Http(new Url('http:\\tom.sapletta.com'), new Port(80));
@@ -24,7 +25,7 @@ $get = new \Phunc\Rest\Get(
 );
 
 //new Dump($get->getFile());
-new \Phunc\Filesystem\File($get->getFile());
+new \Phunc\LoadFile($get->getFile());
 
 
 # download some external file
