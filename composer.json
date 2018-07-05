@@ -16,7 +16,6 @@
   ],
   "require": {
     "php": ">=7.0",
-    "tom-sapletta-com/unittest-generator": "*",
     "nesbot/carbon": "*",
     "codeception/codeception": "*"
   },
