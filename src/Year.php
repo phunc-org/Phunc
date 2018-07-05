@@ -1,6 +1,6 @@
 <?php
 
-namespace Phunc\DateRange;
+namespace Phunc;
 
 
 class Year
