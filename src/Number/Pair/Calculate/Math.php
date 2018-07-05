@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tomaszsapletta
- * Date: 28.06.2018
- * Time: 13:44
- */
 
 namespace Phunc\Number\Pair\Calculate;
 

@@ -102,12 +102,10 @@ int(2)
 ```
 
 
-![alt tag](http://phunc.de/logo_phunc.png)
+![alt tag](https://phunc.org/logo_phunc.png)
 
 
-http://phunc.de/
-
-http://phunc.pl/
+[packagist phunc](https://packagist.org/packages/tom-sapletta-com/phunc)
 
 
 ## Install Phunc
