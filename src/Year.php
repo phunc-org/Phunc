@@ -107,7 +107,7 @@ class Year
      */
     public static function DaysInYear(int $year)
     {
-        $period_from_carbon = \Phunc\DateRange::FirstDayInYearCarbon($year);
+        $period_from_carbon = \Phunc\Year::FirstDayInYearCarbon($year);
         $days_in_year = 365 + $period_from_carbon->format('L');
         return $days_in_year;
     }
