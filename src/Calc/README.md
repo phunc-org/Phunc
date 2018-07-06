@@ -37,6 +37,7 @@ hierarchiczne
 + Nazwa klasy oznacza nazwe operacji
 + Argumenty sa kolejnymi liczbami podlegajacej takiej samej operacji
 
+
 Przyklad ponizej przedstawiono kilka operacji:    
 * (1+2+3+4) / (2-1) / (2*1) = 5
   
@@ -62,3 +63,5 @@ Przyklad ponizej przedstawiono kilka operacji:
             );
     
     
+TODO:
++ sprawdzic kolejnosc dzialan przy kazdej operacji    
