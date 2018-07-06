@@ -12,7 +12,7 @@ use Exception;
 class Json
 {
     /** @var JsonString|JsonArray */
-    protected $json = null;
+    protected $json = '';
 
 	/**
 	 * Json constructor.
@@ -51,13 +51,13 @@ class Json
     }
 
     /**
-     * @param $array
-     * @return string|null
+     * @param array $array
+     * @return string
      */
-    public function fromArrayToString($array)
+    public function fromArrayToString(array $array)
     {
         if (empty($array)) {
-            return null;
+            return '';
         }
         try {
             $encodedJson = json_encode($array);
@@ -69,13 +69,13 @@ class Json
     }
 
     /**
-     * @param $string
-     * @return array|null
+     * @param string $string
+     * @return array|mixed|string
      */
-    public function fromStringToArray($string)
+    public function fromStringToArray(string $string)
     {
         if (empty($string)) {
-            return null;
+            return '';
         }
         try {
             $array = json_decode($string, true);
@@ -103,9 +103,9 @@ class Json
 		return $this->json->toString();
 	}
 
-	/**
-	 * @return null|string
-	 */
+    /**
+     * @return null|string
+     */
 	public function __toString()
 	{
 		return $this->toString();

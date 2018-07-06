@@ -293,7 +293,9 @@ abstract class Collection extends ToConversion //implements Iterator, \Phunc\Fil
     }
 
     /**
-     * @return string
+     * @return null|string
+     *
+     * @throws \Exception
      */
     public function toString()
     {
@@ -303,6 +305,8 @@ abstract class Collection extends ToConversion //implements Iterator, \Phunc\Fil
 
     /**
      * @return null|string
+     *
+     * @throws \Exception
      */
     public function __toString()
     {
@@ -374,6 +378,8 @@ abstract class Collection extends ToConversion //implements Iterator, \Phunc\Fil
     /**
      * @param array $instance_array
      * @return bool
+     *
+     * @throws \Exception
      */
     public function isEqual(array $instance_array)
     {
@@ -391,6 +397,8 @@ abstract class Collection extends ToConversion //implements Iterator, \Phunc\Fil
     /**
      * @param CollectionInstanceInterface $instance_in
      * @return bool
+     *
+     * @throws \Exception
      */
     public function isEqualByInstance(CollectionInstanceInterface $instance_in)
     {
