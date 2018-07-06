@@ -3,3 +3,5 @@
 tests/_output/*
 .idea/
 /vendor/
+/composer.lock
+/composer_2.phar
