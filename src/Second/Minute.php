@@ -7,10 +7,12 @@ namespace Phunc\Second;
  *
  * @package Phunc\Second
  */
-class Minute extends \Phunc\Time
+class Minute extends \Phunc\Second\Time
 {
     /**
      * @return Second
+     *
+     * @throws \Exception
      */
     public function factor()
     {
@@ -19,6 +21,8 @@ class Minute extends \Phunc\Time
 
     /**
      * @return Second
+     *
+     * @throws \Exception
      */
     public function base()
     {

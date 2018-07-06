@@ -19,6 +19,8 @@ class Hour extends \Phunc\Second\Time
 
     /**
      * @return Second
+     *
+     * @throws \Exception
      */
     public function base()
     {

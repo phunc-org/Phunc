@@ -9,14 +9,13 @@ use Phunc\UnitInterface;
  *
  * @package Time
  */
-abstract class Unit extends \Phunc implements UnitInterface
+abstract class Unit extends \Phunc\Unit implements UnitInterface
 {
-    /** @var int */
-//    protected $value = 1;
-
     /**
      * @param float|int|string $value
      * @param null|string $label
+     *
+     * @throws \Exception
      */
     public function __construct($value, $label = null)
     {
@@ -72,7 +71,7 @@ abstract class Unit extends \Phunc implements UnitInterface
     }
 
     /**
-     * @param Unit $unit
+     * @param UnitInterface $unit
      */
     protected function setValueFromUnit(UnitInterface $unit)
     {

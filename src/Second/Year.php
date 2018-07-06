@@ -22,7 +22,9 @@ class Year extends \Phunc\Second\Time
     }
 
     /**
-     * @return Second
+     * @return \Phunc\Second\Second
+     *
+     * @throws \Exception
      */
     public function base()
     {
