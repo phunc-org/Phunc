@@ -58,7 +58,7 @@ class Attribute
 
             if ($rtn['___SOURCE_KEYS_'][$key] instanceof \Phunc\ValueInterface) {
                 $rtn[$newkey] = $rtn['___SOURCE_KEYS_'][$key]->getValue();
-            } else if ($rtn['___SOURCE_KEYS_'][$key] instanceof \Phunc\JsonArrayInterface) {
+            } else if ($rtn['___SOURCE_KEYS_'][$key] instanceof \Phunc\JsonArrayInterface || $rtn['___SOURCE_KEYS_'][$key] instanceof \Phunc\ArrayAttributesInterface) {
                 $rtn[$newkey] = $rtn['___SOURCE_KEYS_'][$key]->toArray();
             } else {
                 $rtn[$newkey] = &$rtn['___SOURCE_KEYS_'][$key];
