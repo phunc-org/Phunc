@@ -19,14 +19,4 @@ class Minute extends \Phunc\Second\Time
         return new Second(60);
     }
 
-    /**
-     * @return Second
-     *
-     * @throws \Exception
-     */
-    public function base()
-    {
-        $base = (float)$this->factor()->base()->getValue() * (float)$this->getValue();
-        return new Second($base, $this->getDate());
-    }
 }

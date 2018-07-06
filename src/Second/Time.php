@@ -40,6 +40,17 @@ abstract class Time extends \Phunc\Unit implements TimeInterface, \Phunc\UnitInt
     }
 
     /**
+     * @return Second
+     *
+     * @throws \Exception
+     */
+    public function base()
+    {
+        $base = (float)$this->factor()->base()->getValue() * (float)$this->getValue();
+        return new Second($base, $this->getDate());
+    }
+
+    /**
      * @return \DateTime
      */
     public function getDate()

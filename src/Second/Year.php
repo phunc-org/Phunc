@@ -13,7 +13,9 @@ use \Phunc\Second\Second;
 class Year extends \Phunc\Second\Time
 {
     /**
-     * @return Day
+     * @return \Phunc\Second\Day|Time
+     *
+     * @throws \Exception
      */
     public function factor()
     {

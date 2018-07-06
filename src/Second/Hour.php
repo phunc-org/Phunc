@@ -10,22 +10,13 @@ namespace Phunc\Second;
 class Hour extends \Phunc\Second\Time
 {
     /**
-     * @return Time|Minute
+     * @return Minute|Time
+     *
+     * @throws \Exception
      */
     public function factor()
     {
         return new Minute(60);
-    }
-
-    /**
-     * @return Second
-     *
-     * @throws \Exception
-     */
-    public function base()
-    {
-        $base = (float)$this->factor()->base()->getValue() * (float)$this->getValue();
-        return new Second($base, $this->getDate());
     }
 
 }
