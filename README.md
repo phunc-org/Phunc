@@ -108,9 +108,13 @@ int(2)
 
 [packagist phunc](https://packagist.org/packages/tom-sapletta-com/phunc)
 
-## Install Phunc with APICRA
+## Easy way to install Phunc with APICRA
 
-    php apicra
+### first install apicra: 
+
+### install Phunc over apicra 
+    
+    dot phunc install
 
 
 ## Install Phunc
