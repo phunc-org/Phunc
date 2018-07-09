@@ -1,5 +1,6 @@
-Phunc, functional programming in PHP with strong typing
+[Phunc, functional programming in PHP with strong typing](https://github.com/phunc-org/Phunc)
 =====
+
 
 make PHP great again ;)
 
