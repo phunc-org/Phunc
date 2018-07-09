@@ -108,6 +108,10 @@ int(2)
 
 [packagist phunc](https://packagist.org/packages/tom-sapletta-com/phunc)
 
+## Install Phunc with APICRA
+
+    php apicra
+
 
 ## Install Phunc
 
