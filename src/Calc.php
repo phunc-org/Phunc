@@ -2,39 +2,41 @@
 
 namespace Phunc\Calc;
 
-
+/**
+ * Class Calc
+ *
+ * @package Phunc\Calc
+ */
 class Calc
 {
 
+    /** @var \Phunc\OperationInterface */
     protected $operations;
 
     /**
-     * Calc constructor.
      * @param $operations
      */
-    public function __construct(OperationInterface $operations)
+    public function __construct(\Phunc\OperationInterface $operations)
     {
         $this->operations = $operations;
     }
 
     /**
-     * @return OperationInterface
+     * @return \Phunc\OperationInterface
      */
-    public function getOperations(): OperationInterface
+    public function getOperations(): \Phunc\OperationInterface
     {
         return $this->operations;
     }
 
     /**
-     * @param OperationInterface $operations
+     * @param \Phunc\OperationInterface $operations
      * @return Calc
      */
-    public function setOperations(OperationInterface $operations): Calc
+    public function setOperations(\Phunc\OperationInterface $operations): Calc
     {
         $this->operations = $operations;
         return $this;
     }
-
-
 
 }
