@@ -8,7 +8,7 @@
 
 namespace Phunc;
 
-class Port implements \PortInterface
+class Port implements \Phunc\PortInterface
 {
     /** @var string */
     public $port;

@@ -4,14 +4,14 @@
  * Created by tom-sapletta-com, 14.10.2016, 19:56
  */
 
-namespace Phunc;
+namespace Phunc\Cmd;
 
 /**
  * Execute chmod in console
  *
  * Class executeChmodTree
  */
-class ExecuteChmodTree
+class ChmodTree
 {
 
     /**

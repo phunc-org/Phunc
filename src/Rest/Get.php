@@ -6,20 +6,20 @@
  * Time: 14:29
  */
 
-namespace Phunc\Phunc\Rest;
+namespace Phunc\Rest;
 
 use Phunc\Rest\GetInterface;
 
 class Get implements GetInterface
 {
-    /** @var bool|string  */
-    public $file;
-
+    /** @var \Phunc\ValueText  */
+    public $content;
 
     /**
+     * Get constructor.
      * @param \Phunc\Url $url
      * @param \Phunc\Port $port
-     * @param null $parameters
+     * @param array|null $parameters
      */
     public function __construct(\Phunc\Url $url, \Phunc\Port $port, array $parameters = null)
     {
@@ -27,20 +27,20 @@ class Get implements GetInterface
     }
 
     /**
-     * @return bool|string
+     * @return \Phunc\ValueText
      */
-    public function getFile()
+    public function getContent()
     {
-        return $this->file;
+        return $this->content;
     }
 
     /**
-     * @param bool|string $file
+     * @param \Phunc\ValueText $content
      * @return Get
      */
-    public function setFile($file)
+    public function setContent(\Phunc\ValueText $content)
     {
-        $this->file = $file;
+        $this->content = $content;
         return $this;
     }
 
@@ -55,7 +55,11 @@ class Get implements GetInterface
         if ($port == null) {
             $port = new \Phunc\Port(80);
         }
-        $this->file = file_get_contents($url->getUrl());
+        $this->setContent(
+            new \Phunc\ValueText(
+                file_get_contents($url->getUrl())
+            )
+        );
     }
 
 }

@@ -7,7 +7,7 @@
  */
 
 use PHPUnit\Framework\TestCase;
-use Phunc\ExecuteChmodTree;
+use Phunc\ChmodTree;
 
 /**
  * Test Class ExecuteChmodTreeTest
@@ -18,7 +18,7 @@ class ExecuteChmodTreeTest extends TestCase
     public function testTrueIsTrue()
     {
         $param = '';
-        $object = new ExecuteChmodTree($param);
+        $object = new ChmodTree($param);
         $foo = true;
         $this->assertTrue($foo);
     }

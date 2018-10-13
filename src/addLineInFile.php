@@ -30,9 +30,9 @@ class addLineInFile
         if (!$is_writable) {
             $path = pathinfo($file);
             $dir = $path['dirname'];
-            $executing = new ExecuteCreatePath($dir);
+            $executing = new CreatePath($dir);
             if ($use_chmod) {
-                $executing = new ExecuteChmodTree($file);
+                $executing = new ChmodTree($file);
             }
         }
 
