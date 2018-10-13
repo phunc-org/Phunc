@@ -43,6 +43,7 @@ Przyklad ponizej przedstawiono kilka operacji:
   
 
 
+#Example
 
     $operation = new Obelus(
                 new Plus(
