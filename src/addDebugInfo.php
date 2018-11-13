@@ -1,7 +1,6 @@
 <?php
 
 /**
- *
  * Created by tom-sapletta-com
  * Date: 16.10.2016
  * Time: 09:50
@@ -14,6 +13,8 @@ use Config\InfoPath;
 
 /**
  * Class addDebugInfo
+ *
+ * @package Phunc
  */
 class addDebugInfo
 {
