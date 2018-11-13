@@ -105,8 +105,13 @@ int(2)
 
 ![alt tag](https://phunc.org/logo_phunc.png)
 
+![logo Phunc](doc/logo_phunc.png)
 
 [packagist phunc](https://packagist.org/packages/tom-sapletta-com/phunc)
+
+## Install in PHPstorm based on composer project
+
+![phpstorm](install/phpstorm.png)
 
 ## Easy way to install Phunc with APICRA
 

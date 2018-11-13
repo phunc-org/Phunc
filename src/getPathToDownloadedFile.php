@@ -20,7 +20,7 @@ class getPathToDownloadedFile implements HasString, ValueText
     {
         $pathdir = $cache_dir;
         // when not exist path, creati path to source
-        $executing = new ExecuteCreatePath($pathdir);
+        $executing = new CreatePath($pathdir);
         if ($executing->value()) {
             $pathfile = $pathdir . $filename;
 
@@ -45,7 +45,7 @@ class getPathToDownloadedFile implements HasString, ValueText
             }
 
             // Everything for owner, read and execute for others
-            new ExecuteChmodTree($pathfile);
+            new ChmodTree($pathfile);
 
             $this->value = $pathfile;
         }

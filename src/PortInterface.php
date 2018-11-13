@@ -5,6 +5,7 @@
  * Date: 2017-08-15
  * Time: 17:14
  */
+namespace Phunc;
 
 interface PortInterface
 {

@@ -2,22 +2,23 @@
 /**
  * Created by PhpStorm.
  * User: tom
- * Date: 2017-08-15
- * Time: 17:44
+ * Date: 2017-08-25
+ * Time: 11:36
  */
+
 namespace Phunc;
 
-class ValueText
+class Html
 {
-    private $value;
+    private $value = [];
 
     /**
-     * ValueText constructor.
+     * Html constructor.
      * @param string $value
      */
     public function __construct($value)
     {
-        $this->value = $value;
+        $this->setValue(func_get_args());
     }
 
     /**
@@ -30,7 +31,7 @@ class ValueText
 
     /**
      * @param string $value
-     * @return ValueText
+     * @return Html
      */
     public function setValue($value)
     {
@@ -38,4 +39,11 @@ class ValueText
         return $this;
     }
 
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string) new \Phunc\Html\Tag($this);
+    }
 }

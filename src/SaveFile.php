@@ -12,7 +12,7 @@ namespace Phunc;
  * Class SaveFile
  * @package phunc
  */
-class SaveFile implements ValueText
+class SaveFile //implements ValueText
 {
 
     public $value = '';
