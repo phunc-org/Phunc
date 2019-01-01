@@ -1,8 +1,12 @@
 [Phunc, functional programming in PHP with strong typing](https://github.com/phunc-org/Phunc)
 =====
 
+## The strongest side of PHP
+With this libraries you are able to use benefits with strong typing in PHP 5 & 7
 
-make PHP great again ;)
++ Collections with Data Models as Objects
++ Units as Objects with Conversion between Units
++ Calculator with all operations as Objects
 
 [Apache2 requests](doc/Apache2.md)
 
