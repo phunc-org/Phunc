@@ -201,7 +201,7 @@ Thanks goes to these wonderful people
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-[<img src="https://avatars0.githubusercontent.com/u/5669657?s=460&v=4" width="100px;"/><br /><sub><b>Tom Sapletta</b>, Project Leader</sub>](https://tom.sapletta.com)<br />
+[<img src="https://avatars0.githubusercontent.com/u/5669657?s=460&v=4" width="100px;"/><br /><sub><b>Tom Sapletta</b>, <br /> Project Leader</sub>](https://tom.sapletta.com)<br />
 <br />
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
