@@ -1,6 +1,6 @@
 {
-  "name": "tom-sapletta-com/phunc",
-  "version": "0.1.2",
+  "name": "phpfunc/phunc",
+  "version": "1.0.0",
   "description": "Functional Environment for PHP",
   "type": "library",
   "license": "MIT",
@@ -10,17 +10,15 @@
     "Conversion from Array to Collection",
     "searching and filtering in Collection"
   ],
-  "homepage": "https://phunc.org",
+  "homepage": "https://phpfunc.com",
   "authors": [
     {
       "name": "Tomasz Sapletta",
       "email": "tom@sapletta.com"
     }
   ],
-  "require": {
-    "php": ">=7.0",
-    "nesbot/carbon": "*",
-    "codeception/codeception": "*"
+  "require": {    
+    "nesbot/carbon": "*"    
   },
   "autoload": {
     "psr-4": {
